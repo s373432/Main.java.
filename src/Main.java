@@ -1,3 +1,4 @@
+
 import java.util.Random;
 import static java.lang.Math.*;
 
@@ -19,7 +20,7 @@ class first {
                 if (a[i] == 16) {
                     ar[i][j] = cos(pow(cos(xx), 0.333));
                 }
-                if (a[i] == 1  a[i] == 3  a[i] == 4  a[i] == 6  a[i] == 8  a[i] == 9  a[i] == 11  a[i] == 17  a[i] == 18 || a[i] == 19) {
+                if (a[i] == 1 ||  a[i] == 3 || a[i] == 4 || a[i] == 6 || a[i] == 8 || a[i] == 9 || a[i] == 11 || a[i] == 17 || a[i] == 18 || a[i] == 19) {
                     ar[i][j] = pow(cos(pow(0.5*(xx - 1),2)), 2 * (0.75 / (xx - 0.5)));
                 } else {
                     ar[i][j] = log10((abs(xx) + 1) / abs(xx)) * (0.333 + atan(pow(E, pow(-pow(cos(xx), 2), 2))));
@@ -32,6 +33,6 @@ class first {
                 System.out.print(" ");
             }
             System.out.print("\n");
-}
+        }
     }
 }
